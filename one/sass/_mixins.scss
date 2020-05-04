@@ -1,0 +1,11 @@
+@mixin img__fix($pos, $size) {
+    background-position: $pos;
+    background-size: $size;
+}
+
+@mixin flex($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
