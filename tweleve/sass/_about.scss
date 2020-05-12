@@ -1,0 +1,96 @@
+.about {
+    padding: 5rem 0;
+    background-color: $color__white;
+
+    main {
+        // about__img
+        .about__img {
+            width: 50%;
+            height: 400px;
+            background-color: $color__main;
+
+            // image
+            img {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                opacity: 0.3;
+            }
+
+            // after
+            &::after {
+                content: "about me";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $font-popp;
+                text-transform: capitalize;
+                width: 140px;
+                height: 55px;
+                background-color: $color__white;
+                font-size: 1.2rem;
+                color: lighten($color__black, 20%);
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+        }
+
+        // about__text
+        .about__text {
+            width: 50%;
+            padding-left: 1.5rem;
+
+            h2 {
+                font-size: 1.5rem;
+                color: lighten($color__main, 0%);
+                letter-spacing: 0.8px;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                margin: 0.5rem 0;
+                color: lighten($color__black, 10%);
+
+                span {
+                    color: $color__main
+                }
+            }
+
+            p {
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+                color: lighten($color__black, 60%);
+                line-height: 1.5;
+            }
+
+            .download {
+                width: 160px;
+                height: 45px;
+                background-color: $color__white;
+                color: $color__main;
+                border-radius: 30px;
+                border: 1px solid $color__main;
+
+                .lni {
+                    margin-right: 0.6rem;
+                }
+            }
+        }
+    }
+
+    // count__up
+    .count__up {
+        height: 400px;
+        background-image: url('../img/section.jpg');
+        margin-top: 2.5rem;
+
+        // item
+        .item {
+            width: 32%
+        }
+    }
+}

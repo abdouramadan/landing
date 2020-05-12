@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Poppins:500,600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.sec__text__intro {
+  padding-left: 1rem;
+  border-left: 4px solid #31c0ec;
+  position: relative;
+}
+.sec__text__intro h2 {
+  font-size: 2.2rem;
+}
+.sec__text__intro h2 span {
+  color: #31c0ec;
+}
+.sec__text__intro p {
+  font-size: 1.1rem;
+  color: #4d4d4d;
+}
+
+.m__auto {
+  margin: 0 auto;
+}
+
+.m__left__auto {
+  margin-left: auto;
+}
+
+.m__right__auto {
+  margin-right: auto;
+}
+
+.font__muli {
+  font-family: "Muli", sans-serif;
+}
+
+.font__popp {
+  font-family: "Poppins", sans-serif;
+}
+
+.font__bold {
+  font-weight: bold;
+}
+
+.font__normal {
+  font-weight: normal;
+}
+
+.font__italic {
+  font-style: italic;
+}
+
+.d__flex {
+  display: flex;
+}
+
+.d__block {
+  display: block;
+}
+
+.d__inline {
+  display: inline;
+}
+
+.d__inline__flex {
+  display: inline-flex;
+}
+
+.d__inline__block {
+  display: inline-block;
+}
+
+.flex__center__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex__center__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex__between__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex__between__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
+.flex__row {
+  flex-direction: row;
+}
+
+.flex__col {
+  flex-direction: column;
+}
+
+.justify__between {
+  justify-content: space-between;
+}
+
+.justify__center {
+  justify-content: center;
+}
+
+.justify__around {
+  justify-content: space-around;
+}
+
+.justify__end {
+  justify-content: flex-end;
+}
+
+.justify__start {
+  justify-content: flex-start;
+}
+
+.align__between {
+  align-items: space-between;
+}
+
+.align__around {
+  align-items: space-around;
+}
+
+.align__center {
+  align-items: center;
+}
+
+.align__start {
+  align-items: flex-start;
+}
+
+.align__end {
+  align-items: flex-end;
+}
+
+.text__cap {
+  text-transform: capitalize;
+}
+
+.text__upper {
+  text-transform: uppercase;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.text__left {
+  text-align: left;
+}
+
+.text__right {
+  text-align: right;
+}
+
+.text__justify {
+  text-align: justify;
+}
+
+.po__rel {
+  position: relative;
+}
+
+.po__abs {
+  position: absolute;
+}
+
+.po__fix {
+  position: fixed;
+}
+
+.float__left {
+  float: left;
+}
+
+.float__right {
+  float: right;
+}
+
+.clear__fix {
+  clear: both;
+  display: table;
+}
+
+.overflow__hidden {
+  overflow: hidden;
+}
+
+.overflow__visible {
+  overflow: visible;
+}
+
+.overflow__auto {
+  overflow: auto;
+}
+
+.main__header {
+  height: 100vh;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+}
+.main__header::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border: 20px solid #31c0ec;
+  border-radius: 50%;
+}
+.main__header::before {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+  border: 20px solid #FFF;
+  border-radius: 50%;
+}
+.main__header .main__navbar {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main__header .main__navbar .container .logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.8px;
+  border: 1px solid;
+  width: 70px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: #FFF;
+  color: #31c0ec;
+  transition: all 0.3s;
+}
+.main__header .main__navbar .container .logo:hover {
+  background-color: #31c0ec;
+  color: #FFF;
+}
+.main__header .main__navbar .container .navbar__list .link {
+  font-size: 1.1rem;
+  color: #4d4d4d;
+  margin-left: 1rem;
+  transition: all 0.3s;
+}
+.main__header .main__navbar .container .navbar__list .link:hover {
+  color: #31c0ec;
+}
+.main__header .main__navbar .container .navbar__list .link:last-of-type {
+  width: 140px;
+  height: 45px;
+  background-color: #31c0ec;
+  color: #FFF;
+  border-radius: 30px;
+}
+.main__header .hero {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main__header .hero .hero__text h1 {
+  color: #333333;
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+}
+.main__header .hero .hero__text h1 span:first-of-type {
+  font-size: 1.5rem;
+}
+.main__header .hero .hero__text h1 span:nth-of-type(2) {
+  font-size: 2.5rem;
+}
+.main__header .hero .buttons {
+  margin-top: 1.5rem;
+}
+.main__header .hero .buttons .link {
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  width: 160px;
+  height: 45px;
+  border-radius: 30px;
+}
+.main__header .hero .buttons .link:first-of-type {
+  background-color: #31c0ec;
+  color: #FFF;
+}
+.main__header .hero .buttons .link:last-of-type {
+  background-color: #FFF;
+  color: #4d4d4d;
+  border: 1px solid #31c0ec;
+}
+
+.about {
+  padding: 5rem 0;
+  background-color: #FFF;
+}
+.about main .about__img {
+  width: 50%;
+  height: 400px;
+  background-color: #31c0ec;
+}
+.about main .about__img img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.3;
+}
+.about main .about__img::after {
+  content: "about me";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  width: 140px;
+  height: 55px;
+  background-color: #FFF;
+  font-size: 1.2rem;
+  color: #333333;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.about main .about__text {
+  width: 50%;
+  padding-left: 1.5rem;
+}
+.about main .about__text h2 {
+  font-size: 1.5rem;
+  color: #31c0ec;
+  letter-spacing: 0.8px;
+}
+.about main .about__text h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #1a1a1a;
+}
+.about main .about__text h3 span {
+  color: #31c0ec;
+}
+.about main .about__text p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #999999;
+  line-height: 1.5;
+}
+.about main .about__text .download {
+  width: 160px;
+  height: 45px;
+  background-color: #FFF;
+  color: #31c0ec;
+  border-radius: 30px;
+  border: 1px solid #31c0ec;
+}
+.about main .about__text .download .lni {
+  margin-right: 0.6rem;
+}
+.about .count__up {
+  height: 400px;
+  background-image: url("../img/section.jpg");
+  margin-top: 2.5rem;
+}
+.about .count__up .item {
+  width: 32%;
+}
+
+/*# sourceMappingURL=app.css.map */
