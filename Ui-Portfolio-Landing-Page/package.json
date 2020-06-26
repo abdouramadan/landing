@@ -1,12 +1,12 @@
 {
-  "name": "nine",
+  "name": "one",
   "version": "1.0.0",
-  "description": "Portfolio Design",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "sass --watch sass/app.scss css/app.css"
   },
   "keywords": [],
-  "author": "Abdou Ramadan",
+  "author": "Abdou ramadan",
   "license": "ISC"
 }
